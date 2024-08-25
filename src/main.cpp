@@ -3,6 +3,7 @@
 #include <time.h>
 #include <coredecls.h> // optional settimeofday_cb() callback to check on server
 #include "RTClib.h"
+#include "secrets.h"
 // #include "NTPClient.h"
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
@@ -16,10 +17,7 @@
 #include "timeconfig.hpp"
 #include <PubSubClient.h>
 
-#ifndef STASSID
-#define STASSID "Sly.fi"
-#define STAPSK "chiroptera"
-#endif
+
 
 #define MY_TZ "PST8PDT,M3.2.0,M11.1.0"
 #define MY_NTP_SERVER "pool.ntp.org"
